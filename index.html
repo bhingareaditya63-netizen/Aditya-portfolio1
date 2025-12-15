@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style2.css" />
+  <title>Aditya's Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #eeebeb;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: #1c1a1a;
+      border-bottom: 2px solid #ddd;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #d8f72a,;
+      margin-bottom: 15px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 20px;
+      padding: 12px 20px;
+      background: linear-gradient(90deg, #2ad9ec, #2ad9ec);
+      border-radius: 50px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: rgb(243, 238, 238);
+      font-size: 18px;
+      padding: 8px 18px;
+      border-radius: 25px;
+      transition: 0.3s ease;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      background: white;
+      color: #357ab8;
+      box-shadow: 0px 2px 8px rgba(255,255,255,0.5);
+      transform: translateY(-2px);
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      color: #4a90e2;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fafafa;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 15px;
+      background: #4a90e2;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #357ab8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #222;
+      color: white;
+      margin-top: 40px;
+    }
+    @media (max-width: 768px) {
+      header img {
+        width: 120px;
+        height: 120px;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      nav ul li a {
+        font-size: 16px;
+      }
+
+      section {
+        margin: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header {
+        padding: 25px 10px;
+      }
+
+      header h1 {
+        font-size: 22px;
+      }
+
+      header p {
+        font-size: 14px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .projects {
+        grid-template-columns: 1fr;
+      }
+
+      .btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="20250320_150000~2.jpg" alt="Profile Photo" />
+    <h1>Bhingare Aditya Dnyaneshwar</h1>
+    <p>Web Developer | Designer | Builder</p>
+    <nav class="navbar">
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#Skills">Skills</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello!! Myself Aditya</p>
+    <p>
+      I’m a first-year Computer Engineering student at Zeal College of Engineering
+      and Research (Induri) Pune, currently working toward completing my
+      graduation. I have some knowledge of coding and enjoy building my own
+      programs. I’m a beginner in Python, and I’ve also learned Java and HTML. I
+      also have an interest in design and enjoy creating clean and creative
+      designs. I’m continuously exploring new concepts, improving my skills, and
+      growing step by step in my tech journey.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>My Time Table</h3>
+        <p>Structured Learning Hours By HTML & CSS Code.</p>
+        <a href="http://sites.google.com/view/adityabhingare/home" target="_blank" class="btn">View Project</a>
+      </div>
+
+      <div class="card">
+        <h3>Notes Of HTML & CSS</h3>
+        <p>Your Shortcut to Smart Learning Notes.</p>
+        <a href="https://sites.google.com/view/note-by-adiitech/home" target="_blank" class="btn">View Notes Of HTML</a>
+        <a href="https://sites.google.com/view/notesbyadiiitech/home" target="_blank" class="btn">View Notes Of CSS</a>
+      </div>
+
+      <div class="card">
+        <h3>Animation Program</h3>
+        <p>Experimenting with conversational UI and smart frontend architecture.</p>
+        <a href=" https://sites.google.com/view/adiiiitech/home"target="_blank" class="btn">View CODE</a> 
+      </div>
+
+      <div class="card">
+        <h3>Skills</h3>
+        <ul>
+          <li><p>Beginner in Python & Java.</p></li>
+          <li><p>Hands-on with responsive web design.</p></li>
+          <li><p>Creative CSS animations and theme toggles.</p></li>
+          <li><p>Basic understanding of design systems.</p></li>
+          <li><p>Quick learner, continuously improving coding skills.</p></li>
+        </ul>
+      </div>
+
+  <div class="card">
+        <h3>Certified</h3>
+        <ul>
+          <li><p>Certified for completing basics of HTML and CSS</p></li>
+          <li><p>Certificate of Google site .</p></li>
+          <li><p>Creative CSS animations and theme toggles.</p></li>
+          <li><p>Certificate Of Playstore</p></li>
+          <li><p>certificate of Google Drive</p></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>My Values</h3>
+        <ul>
+          <li><p>Couragous</p></li>
+          <li><p>Disipline</p></li>
+          <li><p>Consistent</p></li>
+          <li><p>Confident</p></li>
+          <li><p>Honesty</p></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:bhingareaditya63@gmail.com">bhingareaditya63@gmail.com</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/itx_adiiii_07" target="_blank">@itx_adiiii_07</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/aditya-bhingare-235767393" target="_blank">Aditya Bhingare</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 | Aditya Bhingare</p>
+  </footer>
+<script>
+    function toggleMenu() {
+      document.getElementById('nav-menu').classList.toggle('active');
+    }
+
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 70;
+        if (pageYOffset >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').includes(current)) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
